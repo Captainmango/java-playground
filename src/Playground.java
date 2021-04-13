@@ -3,9 +3,10 @@
 public class Playground {
 
     public static void main(String [] args){
-
-        System.out.println("test");
-
+        ProcessHandle currentProcess = ProcessHandle.current();
+        ProcessHandle.Info currentProcessInfo = currentProcess.info();
+        System.out.println("PID: " + currentProcess.pid());
+        System.out.println("Info: " + currentProcessInfo);
     }
 
 }
