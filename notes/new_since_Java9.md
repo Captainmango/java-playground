@@ -72,3 +72,7 @@ com.package.name2{
 ```
 
 This is very similar to the javascript export syntax as a way of understanding.
+
+### http requests
+
+Look at the docs for the respective Java version here. Look like there are a bajillion ways of sending HTTP requests in Java. The Java 16 syntax is very close to a promise based architecture akin to JavaScript.
