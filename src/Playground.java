@@ -4,10 +4,10 @@ public class Playground {
 
     public static void main(String [] args){
 
-        String myString = "this is a string";
-        boolean isFun = true;
+        int num2 = 3;
+        byte num1 = 127;
 
-        System.out.println(myString + ", This is another string");
+        System.out.println(Math.pow(num1, num2));
 
     }
 

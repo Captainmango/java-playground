@@ -62,26 +62,31 @@ Booleans are as they are in other languages. Either true or false. No need for c
 
 ### Addition
 
+Addition is the same as all other languages. Add with + sign. This returns the more precise type when different types of numbers are added.
 
 ### Subtraction
 
-
+Subtraction is the same as all other languages. Minus with the - sign. Returns the same as above.
 
 ### Division
 
-
+Division is the same as all other languages. / is division. The return is the more precise number of the numbers passed in. If an int and double are passed in, the return will be a double.
 
 ### Multiplication
 
+Multiplication is the same as all other languages. * is multiplication sign.
 
 ### Modulo
 
+Use % for remainder from division. Always return the more precise type
 
 ### Exponent
 
-
+Math.pow is the way to do this in Java. This always returns a double as per the method description.
 
 ## Flow control
+
+### If statements
 
 
 
