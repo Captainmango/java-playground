@@ -84,11 +84,57 @@ Use % for remainder from division. Always return the more precise type
 
 Math.pow is the way to do this in Java. This always returns a double as per the method description.
 
+### And
+
+double ampersand, as normal
+
+### Or
+
+double pipes, as normal
+
+### Not
+
+bang, as normal
+
 ## Flow control
 
 ### If statements
 
+If statements are very similar to JavaScript. You can do them on one line without curly brackets, but this is poor convention.
 
+```java
+
+if(//boolean){
+    //code
+ } else {
+    //more code
+        }
+
+```
+
+Any condition that evaluates to a boolean will work here. Raw values are not truthy in Java so this cannot be passed into an if statement. Matching on type or value is the best way to match.
+
+### Switch
+
+Switch statements are very rigid constructs in Java. They take in an integer expression or discrete value. Not a boolean. Then, each of the cases must be of the matching type of what was passed in. (Basically any type but boolean).
+
+```java
+
+switch(expression){
+
+   case value1:
+      break;
+   
+   case value2 :
+       break;
+       
+   default : 
+      // Statements
+}
+
+```
+
+These are really good for matching on specific cases and therefore managing state. But, they are not very useful for pattern matching, like they are in JavaScript. Bear that in mind when coding with them. Seems like switches and enums will work well together.
 
 ## Loops
 
