@@ -139,5 +139,81 @@ These are really good for matching on specific cases and therefore managing stat
 ## Loops
 
 
+### For loops
+
+Loops are written in the same way as Javascript loops (though Java was deffo first).
+
+We have access to what is called an enhanced for loop that allows us to work on an array iteratively without declaring an iterator variable. These look like:
+```java
+for([data-type][variable name] : [collection]){
+    //code stuff here
+        }
+
+```
+
+Scoping rules also apply. That is that variables are only accessible in the scope they are declared. It is possible to declare things as static to get them to be accessible elsewhere, but this is an awful idea. Dependency injection is always a better way of handling this.
+
+For loop in Java:
+
+```java
+for([iterator-variable]; [condition]; [work if true(usually increment or decrement of iterator variable)]){
+    
+    //code stuff
+        }
+```
+
+The iterator variable an condition sections can be left blank. When this is done, the compiler doesn't implant any value and assumes them to be truthy. This means the loop wil run forever.
+
+
+### While loops
+
+While loops are similar in Java are similar to how they are in other languages.
+
+```java
+while(expression){
+    //code stuff
+        }
+```
+
+The work inside the loop will not be triggered unless the expression evaluates to true. When major gotcha is ensuring you have an iteration statement at the bottom (or top) of the while loop. If the expression never evaluates to false, the loop will run forever.
+
+Deciding when to use which loop is easy:
+- is the work being done on each element in the collection/ data sructure?
+- is the iteration condition the same for each item?
+- is the initialisation the same i.e. there is no complex logic to create a new structure.
+
+
+### Do while loops
+
+Do while loops are a newish concept. These are essentially a while loop, but the work of the loop is carried out at least one time. They have the folloing syntax:
+
+```java
+    do{
+    //code stuff
+        } while(expression);
+```
+
+### Continue
+
+Continue is as it is in other languages. It will stop the current execution of the loop and move to the next iteration. That is, it will apply the iteration condition and then evaulate the expression again, then carry out work.
+
+These are often used in conjunction with if statements as we need a branch to understand if work should be continued or not.
+
+An example of this could be:
+
+```java
+class test {
+    public static void main(String[] args){
+        for(int i = 0; i < 5; i++){
+            if(i < 3){
+                continue;
+            }
+        System.out.println(i);
+        }
+    }
+}
+```
+
+The continue statement will only be hit when the if condition is true. So the output of the code will be 3,4.
 
 ## Methods and parameters/ arguments
