@@ -104,7 +104,7 @@ If statements are very similar to JavaScript. You can do them on one line withou
 
 ```java
 
-if(//boolean){
+if(//expression){
     //code
  } else {
     //more code
@@ -112,7 +112,7 @@ if(//boolean){
 
 ```
 
-Any condition that evaluates to a boolean will work here. Raw values are not truthy in Java so this cannot be passed into an if statement. Matching on type or value is the best way to match.
+Any expression that evaluates to a boolean will work here. Raw values are not truthy in Java so this cannot be passed into an if statement. Matching on type or value is the best way to match.
 
 ### Switch
 
