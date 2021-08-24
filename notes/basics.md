@@ -216,4 +216,41 @@ class test {
 
 The continue statement will only be hit when the if condition is true. So the output of the code will be 3,4.
 
+### Break
+
+Break works the same way as continue except that it stops execution of the loop entirely. Simple as.
+
 ## Methods and parameters/ arguments
+
+A method is a block of code the is executed when called. It's caller has knowledge and access to this as it should be a member of the class that was instantiated when called. However, classes can be passed into methods as arguments, so these would be considered part of the execution context.
+
+### Main
+
+The main method on a class is characterised by the following:
+
+```java
+
+class Test {
+    public static void main(String[] args){
+        //code stuff
+    }
+}
+
+```
+
+To break each part of this down:
+- public means the method can be accessed outside of the instance of the class if needed. Its counter part is __private__. 
+- static means the method is considered part of the global space and can be called without instantiating the class. This has no counterpart as classes need to be built before they can be used.
+- void indicates that this method does not return anything. You can return any data type or an instance of a class.
+- args is the String variable that is passed into main. 
+
+The main function is called when you try to build a class from the command line. The arguments passed in are then used as a string inside the context of the program.
+
+
+### Method callers
+
+When a method is called, a different world is created inside the execution context of the method. This meansn that arguments passed in are considered local. But, as reference types (like classes) are references to positions in memory and not direct access, class members can be mutated by functions. To prevent mutations, focus on using immutable types i.e. primitives.
+
+
+
+
