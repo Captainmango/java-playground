@@ -249,7 +249,15 @@ The main function is called when you try to build a class from the command line.
 
 ### Method callers
 
-When a method is called, a different world is created inside the execution context of the method. This meansn that arguments passed in are considered local. But, as reference types (like classes) are references to positions in memory and not direct access, class members can be mutated by functions. To prevent mutations, focus on using immutable types i.e. primitives.
+When a method is called, a different world is created inside the execution context of the method. This means that arguments passed in are considered local. But, as reference types (like classes) are references to positions in memory and not direct access, class members can be mutated by functions. To prevent mutations, focus on using immutable types i.e. primitives.
+
+### Function benefits
+
+There are 4 big benefits to using functions in general:
+- Avoiding code redundnacy. We can make sure that all code we write is maintained and easy to search through.
+- Modularation. Making code modular allows for easy reuse.
+- Abstraction. Abstracting reusable chnks of code allows us to better control the dependencies.
+- Avoid variable name collisions. Each function has its own internal scope in Java, so variables can share names.
 
 
 
